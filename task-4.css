@@ -1,0 +1,218 @@
+/* BASIC RESET
+   Removes default browser spacing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY */
+body {
+    /* Font used on the webpage */
+    font-family: Arial, sans-serif;
+    /* Light background */
+    background-color: #eef2f7;
+    /* Basic text color */
+    color: #333;
+}
+/* PRICING SECTION */
+.pricing-section {
+    /* Minimum height of the page */
+    min-height: 100vh;
+    /* Space around the content */
+    padding: 60px 20px;
+    /* Centers the heading and cards */
+    text-align: center;
+}
+/* Main heading */
+.pricing-section h1 {
+    /* Heading color */
+    color: #243b55;
+    /* Heading size */
+    font-size: 36px;
+    /* Space below heading */
+    margin-bottom: 10px;
+}
+/* Subtitle */
+.subtitle {
+    /* Gray text */
+    color: #666;
+    /* Space below subtitle */
+    margin-bottom: 40px;
+}
+/* PRICING CARDS CONTAINER */
+.pricing-container {
+    /* Places cards in a row */
+    display: flex;
+    /* Centers the cards */
+    justify-content: center;
+    /* Space between cards */
+    gap: 25px;
+    /* Allows cards to move to the next line */
+    flex-wrap: wrap;
+}
+/* INDIVIDUAL PRICING CARD */
+.pricing-card {
+    /* White card background */
+    background-color: white;
+    /* Card width */
+    width: 280px;
+    /* Space inside the card */
+    padding: 30px 25px;
+    /* Rounded corners */
+    border-radius: 12px;
+    /* Light shadow */
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    /* Makes hover animation smooth */
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+    /* Needed for the popular badge */
+    position: relative;
+}
+/* CARD HOVER EFFECT */
+.pricing-card:hover {
+    /* Moves card slightly upward */
+    transform: translateY(-8px);
+    /* Stronger shadow when hovering */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+/* PLAN NAME */
+.pricing-card h2 {
+    /* Plan name color */
+    color: #243b55;
+    /* Space below plan name */
+    margin-bottom: 10px;
+}
+/* PLAN DESCRIPTION */
+.plan-description {
+    /* Gray description */
+    color: #666;
+    /* Small text */
+    font-size: 14px;
+    /* Space below description */
+    margin-bottom: 20px;
+    /* Improves readability */
+    line-height: 1.5;
+}
+/* PRICE */
+.price {
+    /* Space around price */
+    margin-bottom: 25px;
+}
+/* Currency symbol */
+.currency {
+    /* Smaller than the main price */
+    font-size: 20px;
+    /* Makes it slightly higher */
+    vertical-align: top;
+}
+/* Main price */
+.amount {
+    /* Large price */
+    font-size: 42px;
+    /* Bold price */
+    font-weight: bold;
+    /* Price color */
+    color: #243b55;
+}
+/* Month text */
+.duration {
+    /* Smaller text */
+    font-size: 14px;
+    /* Gray color */
+    color: #666;
+}
+/* FEATURES */
+.features {
+    /* Removes bullet points */
+    list-style: none;
+    /* Space below feature list */
+    margin-bottom: 25px;
+}
+/* Individual feature */
+.features li {
+    /* Space between features */
+    margin-bottom: 12px;
+    /* Font size */
+    font-size: 14px;
+    /* Text color */
+    color: #444;
+}
+/* CHOOSE PLAN BUTTON */
+.plan-button {
+    /* Button background */
+    background-color: #243b55;
+    /* White text */
+    color: white;
+    /* Removes default border */
+    border: none;
+    /* Space inside button */
+    padding: 12px 25px;
+    /* Rounded button */
+    border-radius: 6px;
+    /* Button width */
+    width: 100%;
+    /* Font size */
+    font-size: 15px;
+    /* Shows pointer on hover */
+    cursor: pointer;
+    /* Smooth color change */
+    transition: background-color 0.3s ease;
+}
+/* Button hover */
+.plan-button:hover {
+    /* Darker button */
+    background-color: #141e30;
+}
+/* MOST POPULAR CARD */
+.popular {
+    /* Highlight the popular card */
+    border: 2px solid #243b55;
+}
+/* Popular badge */
+.popular-badge {
+    /* Position badge above the card */
+    position: absolute;
+    /* Places badge near the top */
+    top: -14px;
+    /* Centers the badge */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Badge background */
+    background-color: #243b55;
+    /* Badge text */
+    color: white;
+    /* Space inside badge */
+    padding: 6px 15px;
+    /* Rounded badge */
+    border-radius: 20px;
+    /* Smaller text */
+    font-size: 12px;
+    /* Prevents text from wrapping */
+    white-space: nowrap;
+}
+/* JAVASCRIPT MESSAGE */
+#message {
+    /* Space above message */
+    margin-top: 30px;
+    /* Text color */
+    color: #243b55;
+    /* Bold message */
+    font-weight: bold;
+}
+/* RESPONSIVE DESIGN */
+/* On smaller screens, cards become one column.*/
+@media (max-width: 700px) {
+    /* Smaller page spacing */
+    .pricing-section {
+        padding: 45px 15px;
+    }
+    /* Smaller main heading */
+    .pricing-section h1 {
+        font-size: 30px;
+    }
+    /* Cards take more available width */
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}

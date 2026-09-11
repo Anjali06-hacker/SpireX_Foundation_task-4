@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+    <!-- Makes the webpage responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title shown on the browser tab -->
+    <title>Pricing Plans</title>
+    <!-- Connects the HTML file with the CSS file -->
+    <link rel="stylesheet" href="task-4.css">
+</head>
+<body>
+    <!-- PRICING SECTION -->
+    <section class="pricing-section">
+        <!-- Main heading -->
+        <h1>Choose Your Plan</h1>
+        <!-- Short description -->
+        <p class="subtitle">
+            Select a plan that suits your needs.
+        </p>
+        <!-- PRICING CARDS CONTAINER -->
+        <div class="pricing-container">
+            <!-- BASIC PLAN -->
+            <div class="pricing-card">
+                <!-- Plan name -->
+                <h2>Basic</h2>
+                <!-- Short plan description -->
+                <p class="plan-description">
+                    For beginners and personal use.
+                </p>
+                <!-- Price -->
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount">199</span>
+                    <span class="duration">/month</span>
+                </div>
+                <!-- Features -->
+                <ul class="features">
+                    <li>✔ 5 Projects</li>
+                    <li>✔ 5 GB Storage</li>
+                    <li>✔ Email Support</li>
+                    <li>✔ Basic Features</li>
+                </ul>
+                <!-- Choose plan button -->
+                <button class="plan-button">
+                    Choose Plan
+                </button>
+            </div>
+            <!-- STANDARD PLAN -->
+            <!-- "popular" class makes this card different -->
+            <div class="pricing-card popular">
+                <!-- Popular badge -->
+                <div class="popular-badge">
+                    Most Popular
+                </div>
+                <!-- Plan name -->
+                <h2>Standard</h2>
+                <!-- Short description -->
+                <p class="plan-description">
+                    For students and small projects.
+                </p>
+                <!-- Price -->
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount">499</span>
+                    <span class="duration">/month</span>
+                </div>
+                <!-- Features -->
+                <ul class="features">
+                    <li>✔ 15 Projects</li>
+                    <li>✔ 25 GB Storage</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ Advanced Features</li>
+                </ul>
+                <!-- Choose plan button -->
+                <button class="plan-button">
+                    Choose Plan
+                </button>
+            </div>
+            <!--  PREMIUM PLAN -->
+            <div class="pricing-card">
+                <!-- Plan name -->
+                <h2>Premium</h2>
+                <!-- Short description -->
+                <p class="plan-description">
+                    For professionals and businesses.
+                </p>
+                <!-- Price -->
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount">999</span>
+                    <span class="duration">/month</span>
+                </div>
+                <!-- Features -->
+                <ul class="features">
+                    <li>✔ Unlimited Projects</li>
+                    <li>✔ 100 GB Storage</li>
+                    <li>✔ 24/7 Support</li>
+                    <li>✔ All Features</li>
+                </ul>
+                <!-- Choose plan button -->
+                <button class="plan-button">
+                    Choose Plan
+                </button>
+            </div>
+        </div>
+        <!-- JavaScript message will appear here -->
+        <p id="message"></p>
+    </section>
+    <!-- Connects the JavaScript file -->
+    <script src="task-4.js"></script>
+</body>
+</html>
